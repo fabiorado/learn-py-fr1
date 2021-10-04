@@ -11,5 +11,9 @@
 #   + products (think about the easyest way to insert products with basic information)
 
 
+# pour prendra la liste des modules instalés
 
+
+
+#pip freeze > requirements.txt
 

@@ -4,26 +4,34 @@ Basic scripts and functions created from lessons.
 
 ## Installation:
 
-### Configure an "venv"?
+### Setup a "venv"?
 
 ``` python
 python -m venv env
 Windows >> env\Scripts\activate
 Bash >> source env/bin/activate
 ```
-
-## Questions and study
+### Requirements
+To generate the list of requirements
+```
+pip freeze > requirements.txt
+```
+To install all the requirements
+```
+pip install -r requirements.txt
+```
+## Questions and more
 
 - TDD
-- WebApp ?
-- Flask or Jungle?
+- WebApp with Flask or Djungle?
 - all-in executable (install)?
-- module Typer
+- module Typer why?
 
 ## Things to remender
 
 - GIT basics
 - TDD + pytest
 - venv
-- modules os, pathlib, json ...
+- modules
+    - | os | pathlib | json | PySide6 |
 

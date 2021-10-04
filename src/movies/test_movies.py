@@ -1,10 +1,18 @@
 import warnings
 import pytest
-from movies import Movie
+import json
+from pathlib import Path
+from movies import DATA_FILE, Movie
 
 # Arrange
 @pytest.fixture
-def movie():
+def setup_file():
+    DATA_FILE = Path("../data/test_data.json").resolve()
+    with open(DATA_FILE, "w") as f:
+        json.dump([], f, indent=4)
+
+@pytest.fixture
+def movie(setup_file):
     return Movie(title="It")
 
 # Assert
