@@ -6,7 +6,7 @@ Basic scripts and functions created from lessons.
 ## Installation (ubuntu):
 
 ### GIT
-```
+``` bash
 sudo apt-get update
 sudo apt install git
 sudo mkdir /home/fabio/projects
