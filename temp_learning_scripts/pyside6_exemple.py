@@ -2,6 +2,9 @@ import sys
 import random
 from PySide6 import QtCore, QtWidgets, QtGui
 
+# Problems in Ubuntu 20.04, do this to solve:
+# sudo apt install libopengl0 -y
+
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
