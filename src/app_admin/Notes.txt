@@ -1,0 +1,28 @@
+
+
+Left Menu:
+
+    List of "script_name"
+    click action shows on "top_menu":
+        + By parameter
+            + Label with "parameter_name"
+            + LineEdit with de defaut value
+
+Top Menu:
+    + button "btn_run_script"
+    + labels and LineEdits from left menu
+
+Center:
+    Output
+
+Botton:
+    Time: start + timer in seconds
+    + maybe messagens from "logging"
+
+
+---------------------------------------------------------------
+i dont need a JSON... 
+i can format the names directely from the files, dinamicaly
+---------------------------------------------------------------
+
+
