@@ -9,6 +9,9 @@ Basic scripts and functions created from lessons.
 ``` bash
 sudo apt-get update
 sudo apt install git
+git config --global user.name "Fabio Rado"
+git config --global user.email "fabio.rado@hotmail.com"
+
 sudo mkdir /home/fabio/projects
 sudo chmod -R 777 /home/fabio/projects/
 cd /home/fabio/projects/
@@ -20,7 +23,9 @@ cd PyRepo
 ```
 sudo apt install python3.8
 sudo apt install python3.8-pip
+    OR >> sudo apt install python3-pip
 sudo apt install python3.8-venv
+    OR >> sudo apt install python3-venv
 ```
 To solve the problem with "PySide6"
 ```
