@@ -1,6 +1,9 @@
 import json
 from pathlib import Path
 
+msg = "testing ..."
+
+print(msg)
 
 def t1():
     from faker import Faker
