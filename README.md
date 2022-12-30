@@ -7,14 +7,14 @@ Basic scripts and functions created from lessons.
 
 ### GIT
 ``` bash
-sudo apt-get update
+sudo apt update && sudo apt upgrade
 sudo apt install git
 git config --global user.name "Fabio Rado"
 git config --global user.email "fabio.rado@hotmail.com"
 
-sudo mkdir /home/fabio/projects
-sudo chmod -R 777 /home/fabio/projects/
-cd /home/fabio/projects/
+sudo mkdir ~/projects
+sudo chmod -R 777 ~/projects
+cd ~/projects
 git clone https://github.com/fabiorado/PyRepo.git PyRepo
 cd PyRepo
 ```
@@ -38,6 +38,7 @@ sudo apt install libopengl0 -y
 ```
 #### Python 3.10 (ubuntu)
 
+Python 3.10 cammes with Ubuntu 22.04 and we it's not a good idea to touch him.  
 We can install another version and use the linux command "update-alternatives" to set and alternate between them.
 
 1. Add the new repo and install python
