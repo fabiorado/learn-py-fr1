@@ -1,0 +1,97 @@
+<Button>
+    font_size: 32
+    size_hint: (.2, .2)
+
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        TextInput:
+            id: calc_input
+            text: "0"
+            halign: "right"
+            multiline: False
+            font_size: 65
+            size_hint: (1, .15)
+
+        GridLayout:
+            cols: 4
+            rows: 5
+        
+            Button:
+                text: "%"
+                on_press: root.button_press("%")
+            Button:
+                text: u"\u00AB"
+                on_press: root.button_press("<<")
+            Button:
+                id: clear
+                text: "C"
+                on_press: root.clear()
+            Button:
+                text: "/"
+                on_press: root.button_press("/")
+
+            Button:
+                text: "7"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(7)
+            Button:
+                text: "8"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(8)
+            Button:
+                text: "9"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(9)
+            Button:
+                text: "x"
+                on_press: root.button_press("*")
+
+            Button:
+                text: "4"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(4)
+            Button:
+                text: "5"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(5)
+            Button:
+                text: "6"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(6)
+            Button:
+                text: "-"
+                on_press: root.button_press("-")
+            
+            Button:
+                text: "1"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(1)
+            Button:
+                text: "2"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(2)
+            Button:
+                text: "3"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(3)
+            Button:
+                text: "+"
+                on_press: root.button_press("+")
+
+            Button:
+                text: "+/-"
+                background_color: (157/255, 157/255, 157/255, 1)
+            Button:
+                text: "0"
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(0)
+            Button:
+                text: "."
+                background_color: (157/255, 157/255, 157/255, 1)
+                on_press: root.button_press(".")
+            Button:
+                text: "="
+                on_press: root.equals()

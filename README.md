@@ -1,7 +1,12 @@
 
 # PyRepo
 Learning Python.<br>
-Basic scripts and functions created from lessons.
+Instructions, basic scripts and functions created from lessons.
+
+Other articles:  
+* [Install Kivy on WSL](/src/kivy_app/Install-Kivy-on-WSL.md)
+* [Help Modules](/Help-Modules.md)
+
 
 ## Installation (ubuntu):
 
