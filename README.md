@@ -4,25 +4,41 @@ Learning Python.<br>
 Instructions, basic scripts and functions created from lessons.
 
 Other articles:  
-* [Install Kivy on WSL](/src/kivy_app/Install-Kivy-on-WSL.md)
-* [Help Modules](/Help-Modules.md)
+* [Notes of project ideas](docs/notes_project_ideas.md)
+* [Install Kivy on WSL](docs/Install-Kivy-on-WSL.md)
+* [Help Modules](docs/Help-Modules.md)
+* [Build Android APK](docs/build_android_apk.md)
 
+Links:
+* [WSL Installation doc](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ## Installation (ubuntu):
 
 ### GIT
 ``` bash
 sudo apt update && sudo apt upgrade
-sudo apt install git
 git config --global user.name "Fabio Rado"
 git config --global user.email "fabio.rado@hotmail.com"
 
-sudo mkdir ~/projects
+sudo mkdir ~/projects/repos-git/
 sudo chmod -R 777 ~/projects
-cd ~/projects
+cd ~/projects/repos-git/
 git clone https://github.com/fabiorado/PyRepo.git PyRepo
 cd PyRepo
 ```
+
+### Setup a "venv"
+
+```sh
+mkdir ~/projects/venvs/
+cd ~/projects/venvs/
+python -m venv env_py310
+source env_py310/bin/activate
+```
+
+------------------------------
+## Troubleshooting history
+------------------------------
 
 ### Python
 
@@ -98,7 +114,7 @@ pip freeze > requirements.txt
 ## Questions and more
 
 - TDD
-- WebApp with Flask or Djungle?
+- WebApp with Flask
 - all-in executable (install)?
 - module Typer why?
 

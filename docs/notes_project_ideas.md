@@ -8,7 +8,7 @@ Modules: BeautifulSoup / Selenium
 
 ## Create a simple game
 Module: PythonGames
-Floppy bird
+Flappy Bird
 Tetris
 
 ## Scheduler and scheduler conflict
