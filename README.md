@@ -1,23 +1,44 @@
 
 # PyRepo
 Learning Python.<br>
-Basic scripts and functions created from lessons.
+Instructions, basic scripts and functions created from lessons.
+
+Other articles:  
+* [Notes of project ideas](docs/notes_project_ideas.md)
+* [Install Kivy on WSL](docs/Install-Kivy-on-WSL.md)
+* [Help Modules](docs/Help-Modules.md)
+* [Build Android APK](docs/build_android_apk.md)
+
+Links:
+* [WSL Installation doc](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ## Installation (ubuntu):
 
 ### GIT
 ``` bash
-sudo apt-get update
-sudo apt install git
+sudo apt update && sudo apt upgrade
 git config --global user.name "Fabio Rado"
 git config --global user.email "fabio.rado@hotmail.com"
 
-sudo mkdir /home/fabio/projects
-sudo chmod -R 777 /home/fabio/projects/
-cd /home/fabio/projects/
+sudo mkdir ~/projects/repos-git/
+sudo chmod -R 777 ~/projects
+cd ~/projects/repos-git/
 git clone https://github.com/fabiorado/PyRepo.git PyRepo
 cd PyRepo
 ```
+
+### Setup a "venv"
+
+```sh
+mkdir ~/projects/venvs/
+cd ~/projects/venvs/
+python -m venv env_py310
+source env_py310/bin/activate
+```
+
+------------------------------
+## Troubleshooting history
+------------------------------
 
 ### Python
 
@@ -38,6 +59,7 @@ sudo apt install libopengl0 -y
 ```
 #### Python 3.10 (ubuntu)
 
+Python 3.10 cammes with Ubuntu 22.04 and we it's not a good idea to touch him.  
 We can install another version and use the linux command "update-alternatives" to set and alternate between them.
 
 1. Add the new repo and install python
@@ -92,7 +114,7 @@ pip freeze > requirements.txt
 ## Questions and more
 
 - TDD
-- WebApp with Flask or Djungle?
+- WebApp with Flask
 - all-in executable (install)?
 - module Typer why?
 
