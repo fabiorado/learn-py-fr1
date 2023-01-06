@@ -7,6 +7,8 @@ from kivy.clock import Clock
 from pipe import Pipe
 from random import randint
 
+# 96 = Floor
+
 class Background(Widget):
     cloud_texture = ObjectProperty(None)
     floor_texture = ObjectProperty(None)
@@ -60,11 +62,12 @@ class MainApp(App):
 
     def check_collision(self):
         bird = self.root.ids.bird
+        # Go through each pipe and check if it collides
         is_colliding = False
 
         for pipe in self.pipes:
             if pipe.collide_widget(bird):
-                self.is_colliding = True
+                is_colliding = True
                 if bird.y < (pipe.pipe_center - pipe.GAP_SIZE/2.0):
                     self.game_over()
                 if bird.top > (pipe.pipe_center + pipe.GAP_SIZE/2.0):
@@ -75,7 +78,7 @@ class MainApp(App):
             self.game_over()
 
         if self.was_colliding and not is_colliding:
-            self.root.ids.score.text = str(int(self.root.score.text))
+            self.root.ids.score.text = str(int(self.root.ids.score.text)+1)
         self.was_colliding = is_colliding
 
     def game_over(self):
@@ -104,14 +107,11 @@ class MainApp(App):
             pipe = Pipe()
             pipe.pipe_center = randint(96 + 100, self.root.height - 100)
             pipe.size_hint = (None, None)
-            pipe.pos = (Window.width + i * distance_between_pipes, 96)
+            pipe.pos = (Window.width/2.0 + i * distance_between_pipes, 96)
             pipe.size = (64, self.root.height - 96)
 
             self.pipes.append(pipe)
             self.root.add_widget(pipe)
-
-        # Move the pipes
-        # Clock.schedule_interval(self.move_pipes, 1/60.)
 
     def move_pipes(self, time_passed):
         num_pipes = 5

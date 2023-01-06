@@ -1,5 +1,7 @@
 # Help for the modules
 
+[README](../README.md)  
+
 ## os
 ``` python
 import os

@@ -1,5 +1,7 @@
 # Install Kivy on WSL
 
+[README](../README.md)  
+
 > WSL with Ubuntu 22.04
 
 ## Config

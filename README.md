@@ -8,6 +8,7 @@ Other articles:
 * [Install Kivy on WSL](docs/Install-Kivy-on-WSL.md)
 * [Help Modules](docs/Help-Modules.md)
 * [Build Android APK](docs/build_android_apk.md)
+* [Template for the "Main.py" file with Kivy](docs/template-main-py-kivy.md)
 
 Links:
 * [WSL Installation doc](https://learn.microsoft.com/en-us/windows/wsl/install)

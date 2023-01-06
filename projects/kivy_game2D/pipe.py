@@ -4,7 +4,7 @@ from kivy.uix.image import Image
 from kivy.clock import Clock
 
 class Pipe(Widget):
-    GAP_SIZE = NumericProperty(100)
+    GAP_SIZE = NumericProperty(130)
     CAP_SIZE = NumericProperty(20) # Height of the cap img
     pipe_center = NumericProperty(0)
     bottom_body_position = NumericProperty(0)

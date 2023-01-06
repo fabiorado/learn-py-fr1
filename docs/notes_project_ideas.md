@@ -1,5 +1,7 @@
 # Ideas for projects
 
+[README](../README.md)  
+
 ## WebScraper
 Seach for something in the web, download and analyse
 Prices or specific words...
