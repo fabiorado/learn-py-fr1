@@ -44,77 +44,18 @@
 
         BoxLayout:
             orientation: "horizontal"
+            size: root.width, root.height
+            padding: 10
+            spacing: 10
             Label:
-                text: "Name:"
-                size_hint: (.3, .3)
-            TextInput:
-                id: txtName
-                multiline: False
-                size_hint: (.7, .3)
-    
-        BoxLayout:
-            orientation: "horizontal"
-
-            Label:
-                text: "Sex:"
-                size_hint: (.3, .3)
-    
-            Label:
-                text: "F"
-                halign: "right"
-                font_size: 20
-            CheckBox:
-                group: "sex"
-                on_active: root.checkbox_click(self, self.active, "f")
-
-            Label:
-                text: "M"
-                halign: "right"
-                font_size: 20
-            CheckBox:
-                group: "sex"
-                on_active: root.checkbox_click(self, self.active, "m")
-
-        BoxLayout:
-            orientation: "vertical"
-
-            Label:
-                text: "What is the region of your head that hurts?"
-                size_hint: (1, .3)
-
-            GridLayout:
-                cols: 2
-                size: root.width, root.height
-                padding: 10
-                spacing: 10
-
-                Label:
-                    text: "Front"
-                    font_size: 20
-                    # canvas.before:
-                    #     Rectangle:
-                    #         size: self.size
-                    #         pos: self.pos
-                CheckBox:
-                    on_active: root.checkbox_click(self, self.active, "front")
-
-                Label:
-                    text: "Back"
-                    font_size: 20
-                CheckBox:
-                    on_active: root.checkbox_click(self, self.active, "back")
-
-                Label:
-                    text: "Lateral / Both sides"
-                    font_size: 20
-                CheckBox:
-                    on_active: root.checkbox_click(self, self.active, "lateral")
-        
-                Label:
-                    text: "I don't know"
-                    font_size: 20
-                CheckBox:
-                    on_active: root.checkbox_click(self, self.active, "n/a")
+                id: lblTub
+                text: "Do you have tuberculosis?"
+                font_size: 32
+            Spinner:
+                id: spnTub
+                text: "Select..."
+                values: ["Yes", "No"]
+                on_text: root.spinner_clicked(spnTub.text)
 
         Label:
             id: lblOutput

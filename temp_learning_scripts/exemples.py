@@ -15,4 +15,14 @@ def t2():
     with open(dir1, "x") as f:
         f.write("[]")
 
-t2()
+def t3():
+    import uuid
+    print(str(uuid.uuid4()))
+
+def t4():
+    # dict1 = ['user']
+    dict1 = []
+    if dict1 is None:
+        print("None")
+
+t4()

@@ -7,12 +7,17 @@ from kivy.core.window import Window
 Builder.load_file('formStyle.kv')
 
 class MyLayout(Widget):
-    def spinner_clicked(self, value):
-        self.ids.lblOutput.text = f'You selected "{value}"'
-    
+    results = []
+    def checkbox_click(self, instance, value, text):
+        if value == True:
+            self.results.append(text)
+            self.ids.lblOutput.text = str(text)
+        else:
+            self.results.remove(text)
+
     def submit(self, instance):
-        # self.results.append(self.ids.txtName.text)
-        self.ids.lblOutput.text = f"Ok, thanks."
+        self.results.append(self.ids.txtName.text)
+        self.ids.lblOutput.text = str(self.results)
     
     def clear(self, instance):
         self.ids.lblOutput.text = ""
