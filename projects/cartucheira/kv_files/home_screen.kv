@@ -1,0 +1,35 @@
+<HomeScreen>
+    orientation: 'vertical'
+    
+    MDBoxLayout:
+        orientation: 'vertical'
+        
+        # App Bar
+        MDBoxLayout:
+            padding: dp(5)
+            adaptive_height: True
+
+            MDIconButton:
+                icon: 'plus'
+
+            MDLabel:
+                text: 'Cartucheira'
+                halign: 'center'
+                valign: 'top'
+                font_size: 25
+
+            MDIconButton:
+                icon: 'facebook-messenger'
+
+        MDBoxLayout:
+            ScrollView:
+                bar_width: 0
+
+                MDBoxLayout:
+                    adaptive_height: True
+
+                    MDGridLayout:
+                        id: grid_home
+                        cols: 3
+                        spacing: dp(5)
+                        padding: dp(5)

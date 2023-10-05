@@ -9,7 +9,8 @@ from kivymd.uix.boxlayout import MDBoxLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivymd.uix.card import MDCard
 from kivy.uix.relativelayout import RelativeLayout
-from kivymd.uix.picker import MDThemePicker
+# from kivymd.uix.picker import MDThemePicker
+# from kivymd.uix.pickers import MDThemePicker
 from kivy.uix.scrollview import ScrollView
 from kivymd.uix.selectioncontrol import MDSwitch
 from kivymd.uix.list import OneLineAvatarIconListItem
@@ -121,8 +122,9 @@ class MainApp(MDApp):
 
     def show_theme_picker(self):
         '''Display a dialog window to change app's color and theme.'''
-        theme_dialog = MDThemePicker()
-        theme_dialog.open()
+        # theme_dialog = MDThemePicker()
+        # theme_dialog.open()
+        print("MDThemePicker")
 
     def create_chat(self, profile):
         '''Get all messages and create a chat screen'''

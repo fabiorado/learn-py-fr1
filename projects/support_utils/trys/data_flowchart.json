@@ -1,0 +1,15 @@
+{
+    "start": {
+        "P01": "P01",
+        "condition": {
+            "yes": {
+                "input_output": "Input/Output"
+            },
+            "no": {
+                "subroutine": {
+                    "operation": "Do something else"
+                }
+            }
+        }
+    }
+}
