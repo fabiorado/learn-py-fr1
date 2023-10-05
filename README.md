@@ -36,7 +36,17 @@ cd ~/projects/venvs/
 python -m venv env_py310
 source env_py310/bin/activate
 ```
-
+Multiple versions of Python
+```sh
+# List the python versions
+py -0
+# Directory for the venvs
+cd C:\fr\repos\venvs
+# Create a venv
+py -3.12 -m venv env_py312
+# Another exemple
+py -3.10 -m venv kivy_py310
+```
 ------------------------------
 ## Troubleshooting history
 ------------------------------
