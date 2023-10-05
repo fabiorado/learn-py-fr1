@@ -1,0 +1,19 @@
+{
+  "attributes": [
+    {"rankdir": "LR"}
+  ], 
+  "nodes": [
+      {"id": "A", "label": "Node A"},
+      {"id": "B", "label": "Node B"},
+      {"id": "C", "label": "Node C"},
+      {"id": "D", "label": "Node D"},
+      {"id": "E", "label": "Node E"}
+    ],
+    "edges": [
+      {"from": "A", "to": "B"},
+      {"from": "B", "to": "C"},
+      {"from": "C", "to": "D"},
+      {"from": "D", "to": "E"}
+    ]
+  }
+  
