@@ -1,9 +1,10 @@
 # Self-Dev
 
-[[__TOC__]]
-
 Index
-- [#
+- [ily CBT-Based Action Plan for Personal Growth](#-daily-cbt-based-action-plan-for-personal-growth)
+- [Additional Tips](#-additional-tips)
+- [List of practical CBT-inspired questions and phrases](#list-of-practical-cbt-inspired-questions-and-phrases)
+
 
 ---
 
